@@ -1647,7 +1647,7 @@ static int teamd_context_init(struct teamd_context **pctx)
 	if (!ctx)
 		return -ENOMEM;
 	*pctx = ctx;
-	__g_pid_file = &ctx->pid_file;
+	__g_pid_file = &ctx->handle;
 
 	/* Enable usock by default */
 	ctx->usock.enabled = true;

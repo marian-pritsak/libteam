@@ -495,7 +495,6 @@ errout:
  *
  * @return Zero on success or negative number in case of an error.
  **/
-TEAM_EXPORT
 int team_create(struct team_handle *th, const char *team_name)
 {
 	return do_create(th, team_name, false);
